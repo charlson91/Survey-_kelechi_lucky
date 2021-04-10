@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1 id="title">Tell me about a Music</h1>
@@ -17,18 +18,23 @@
 <input type="email" id="email" name="email" placeholder="Email"><br>
 
 <label id = "number-label">Number:</label>
-<input type = "number" name = "name" id = "number" reguired placeholder = "Number"><br>
-
+<input type = "number" name = "name" id = "number" min = "0" max = "0" reguired placeholder = "Number"><br>
+</form>
 <select id = "dropdown" name = "guitar">
     <option value = "fenders" >fenders</option>
     <option value = "Martins" >martins</option>
     <option value = "Epiphone" >epiphone</option>
     <option value = "others" >others</option>
-    
 </select>
-
-
-    </form>
+ 
+<br>
+<div id = "radio-button-area">
+    <input type = "radio" class="radio-inline" id = "male" name ="gender" value ="male">
+    <input type = "radio" class="radio-inline" id = "female" name ="gender" value ="female">
+    <input type = "radio" class="radio-inline" id = "other" name ="gender" value ="other">
+</div>
+<br>
+   
 
 </body>
 </html>
